@@ -1,5 +1,6 @@
 package com.neppplus.loginuipractice_20220703
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,8 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        회원가입 창으로 이동
         signUpBtn.setOnClickListener {
-            Toast.makeText(this, "회원가입버튼 클릭", Toast.LENGTH_SHORT).show()
+//            비행기 티켓을 발권(출발지 : this(MainActivity) -> 목적지(SignUpActivity)
+            val myIntent = Intent(this, SignUpActivity::class.java)
+//            실제 비행기를 출발
+            startActivity(myIntent)
         }
 
 //        로그인 로직 실행
