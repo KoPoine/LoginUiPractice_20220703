@@ -10,7 +10,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        goBtn.setOnClickListener {
+        loginBtn.setOnClickListener {
             val name = nameEdt.text.toString()
             val birthYear = birthYearEdt.text.toString()
             val nickname = nicknameEdt.text.toString()
