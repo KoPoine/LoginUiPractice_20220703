@@ -19,11 +19,10 @@ class MainActivity : AppCompatActivity() {
 
 //        로그인 로직 실행
         loginBtn.setOnClickListener {
-            val id = idEdt.text.toString()
-            if (id == "") {
+//            아이디 값과 비밀번호 값을 변수화
+            val id = idEdt.text.toString() // 아이디값 변수화
+            val password = passwordEdt.text.toString() //비밀번호 값 변수화
 
-                Toast.makeText(this, "환영합니다.", Toast.LENGTH_SHORT).show()
-            }
 
         }
     }
